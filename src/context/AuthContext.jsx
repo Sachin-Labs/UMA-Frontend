@@ -20,7 +20,9 @@ export const AuthProvider = ({ children }) => {
             try {
                 setUser(JSON.parse(storedUser));
             } catch {
-                localStorage.clear();
+                localStorage.removeItem('accessToken');
+                localStorage.removeItem('refreshToken');
+                localStorage.removeItem('user');
             }
         }
         setLoading(false);
@@ -57,7 +59,9 @@ export const AuthProvider = ({ children }) => {
         try {
             await api.post('/auth/logout');
         } catch { /* ignore */ }
-        localStorage.clear();
+        localStorage.removeItem('accessToken');
+        localStorage.removeItem('refreshToken');
+        localStorage.removeItem('user');
         setUser(null);
     };
 
