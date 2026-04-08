@@ -177,7 +177,7 @@ const LocationPicker = ({
             }}>
                 <div>
                     <p style={{ marginBottom: '8px' }}>⚠️ Google Maps API key missing</p>
-                    <p style={{ fontSize: '0.8rem' }}>Add <code>VITE_GOOGLE_MAPS_API_KEY</code> to <code>client/.env</code></p>
+                    <p style={{ fontSize: '0.8rem' }}>Add <code>VITE_GOOGLE_MAPS_API_KEY</code> and <code>VITE_GOOGLE_MAP_ID</code> to <code>client/.env</code></p>
                 </div>
             </div>
         );
@@ -253,7 +253,7 @@ const LocationPicker = ({
                         gestureHandling="cooperative"
                         disableDefaultUI={false}
                         onClick={handleMapClick}
-                        mapId="ams-location-picker"
+                        mapId={import.meta.env.VITE_GOOGLE_MAP_ID || 'ams-location-picker'}
                         style={{ width: '100%', height: '100%' }}
                     >
                         {markerPos && (
