@@ -253,7 +253,7 @@ const LocationPicker = ({
                         gestureHandling="cooperative"
                         disableDefaultUI={false}
                         onClick={handleMapClick}
-                        mapId={import.meta.env.VITE_GOOGLE_MAP_ID || 'ams-location-picker'}
+                        mapId={import.meta.env.VITE_GOOGLE_MAP_ID || 'uma-location-picker'}
                         style={{ width: '100%', height: '100%' }}
                     >
                         {markerPos && (

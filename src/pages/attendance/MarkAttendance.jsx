@@ -446,7 +446,7 @@ const AttendanceMap = ({ userLocation, officeLocation, radius, isWithinRadius })
                     gestureHandling="cooperative"
                     disableDefaultUI={true}
                     zoomControl={false}
-                    mapId={import.meta.env.VITE_GOOGLE_MAP_ID || 'ams-monochrome-matrix'}
+                    mapId={import.meta.env.VITE_GOOGLE_MAP_ID || 'uma-monochrome-matrix'}
                     style={{ width: '100%', height: '100%', filter: 'grayscale(1) contrast(1.1) brightness(0.95)' }}
                 >
                     {/* Office marker */}

@@ -20,7 +20,7 @@ const Landing = () => {
                         <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center text-accent-fg">
                             <Fingerprint size={24} />
                         </div>
-                        <span className="text-xl font-bold tracking-tight">Attendance MS</span>
+                        <span className="text-xl font-bold tracking-tight">UMA</span>
                     </div>
                     <div className="hidden md:flex items-center gap-6">
                         <ThemeToggle />
@@ -109,7 +109,7 @@ const Landing = () => {
                                 <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center text-accent-fg">
                                     <Fingerprint size={24} />
                                 </div>
-                                <span className="text-xl font-bold tracking-tight">Attendance MS</span>
+                                <span className="text-xl font-bold tracking-tight">UMA</span>
                             </div>
                             <p className="text-[15px] text-dim max-w-sm leading-relaxed">
                                 The essential tool for modern team attendance and workforce logistics.
@@ -135,7 +135,7 @@ const Landing = () => {
                     </div>
                     <div className="pt-12 border-t border-line/50 flex flex-col md:flex-row items-center justify-between gap-6">
                         <p className="text-xs text-muted">
-                            © {new Date().getFullYear()} AMS. All rights reserved.
+                            © {new Date().getFullYear()} UMA. All rights reserved.
                         </p>
                         <div className="flex gap-8">
                             <span className="text-xs font-bold text-muted uppercase tracking-widest">Version 1.0.0</span>
