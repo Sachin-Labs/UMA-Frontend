@@ -1,30 +1,79 @@
-# AMS Frontend — Attendance Management System
+# UMA Frontend — User Management & Attendance System
 
-A React-based frontend for the Multi-Tenant Attendance Management System.
+UMA (User Management & Attendance System) is a modern, production-grade **Multi-Tenant SaaS** platform designed to streamline workforce management. This repository contains the React-based frontend application.
 
-## Tech Stack
+---
+
+## 🚀 Live Demo
+- **Live URL:** [https://uma-client.vercel.app](https://uma-client.vercel.app) *(Replace with your URL)*
+
+---
+
+## 💻 Tech Stack
 - **Framework:** React 19 + Vite
-- **Styling:** CSS (Design System)
+- **Styling:** CSS (Custom Design System) + Tailwind CSS 4.0
+- **Icons:** Lucide React
+- **Maps:** Leaflet & Google Maps API
+- **State/Routing:** React Router 7
 - **Charts:** Chart.js
-- **Maps:** Leaflet + React-Leaflet
-- **HTTP Client:** Axios (with interceptors for JWT rotation)
+- **API Client:** Axios (with Interceptors for JWT rotation)
 
-## Quick Start
-1. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-2. **Setup environment:**
-   - Copy `.env.example` to `.env`
-   - Update `VITE_API_URL` to point to your backend (e.g., your Render URL)
-   - Add `VITE_GOOGLE_MAPS_API_KEY` (if using Google Maps components)
-3. **Run development server:**
-   ```bash
-   npm run dev
-   ```
+---
 
-## Deployment (Vercel)
-This project is ready for Vercel. 
-- Ensure you set `VITE_API_URL` in your Vercel project environment variables.
-- Build command: `npm run build`
-- Output directory: `dist`
+## ✨ Main Features
+- **Multi-Tenant Registration:** Securely register your organisation and manage users.
+- **Smart Attendance:** Mark attendance with real-time location verification (Geofencing).
+- **Leave Management:** Simple workflows for requesting and tracking leaves.
+- **Dynamic Dashboard:** Real-time analytics and attendance statistics.
+- **Dark/Light Mode:** Seamless transition with persistent theme selection.
+- **Responsive Design:** Optimized for all screen sizes and devices.
+
+---
+
+## ⚙️ Setup Instructions
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+
+### 1. Installation
+Navigate to the client directory and install dependencies:
+```bash
+cd client
+npm install
+```
+
+### 2. Environment Variables
+Create a `.env` file in the `client` directory:
+```env
+VITE_API_URL=http://localhost:5000/api
+VITE_GOOGLE_MAPS_API_KEY=your_google_maps_key
+VITE_GOOGLE_MAP_ID=your_custom_map_id
+```
+
+### 3. Run Development Server
+```bash
+npm run dev
+```
+
+---
+
+## 🔑 Environment Variables Section
+| Variable | Description |
+| :--- | :--- |
+| `VITE_API_URL` | Base URL of the backend API |
+| `VITE_GOOGLE_MAPS_API_KEY` | Your Google Maps API Key |
+| `VITE_GOOGLE_MAP_ID` | Map ID for custom styling |
+
+---
+
+## 🤝 Contribution
+Contributions are welcome!
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+Built with ❤️ by [Sachin Balagam](https://github.com/sachinbalagam)

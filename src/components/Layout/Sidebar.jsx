@@ -39,7 +39,7 @@ const Sidebar = () => {
                         <Fingerprint size={24} />
                     </div>
                     <div>
-                        <h1 className="text-xl font-bold tracking-tighter text-bright leading-none">Attendance MS</h1>
+                        <h1 className="text-xl font-bold tracking-tighter text-bright leading-none">UMA</h1>
                         <p className="text-[11px] text-muted font-bold tracking-widest mt-0.5">Core System</p>
                     </div>
                 </div>
