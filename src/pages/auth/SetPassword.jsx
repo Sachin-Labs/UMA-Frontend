@@ -53,7 +53,7 @@ const SetPassword = () => {
                     <div className="w-12 h-12 bg-accent rounded-2xl flex items-center justify-center text-accent-fg mb-4">
                         <Fingerprint size={28} />
                     </div>
-                    <h1 className="auth-logo text-xl font-bold tracking-tighter text-bright mb-2">Attendance MS</h1>
+                    <h1 className="auth-logo text-xl font-bold tracking-tighter text-bright mb-2">UMA</h1>
                     <p className="auth-subtitle text-[15px] text-subtle">Welcome! Set a password for your account.</p>
                 </div>
 
